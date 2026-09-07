@@ -1,0 +1,220 @@
+body {
+  background-color: #1f2732;
+}
+
+.comicpage img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  width: 50%;
+  height: auto;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding-left: 10vw;
+  padding-top: 2vh;
+}
+
+.left {
+  min-width: 0;
+}
+
+.right {
+  min-width: 0;
+}
+
+.layoutan {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 5px;
+  width: 400px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.pagenav {
+  filter: invert(1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.banner {
+  background: #f1efe3;
+}
+
+.banner_content img {
+  max-width: 40%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  padding: 16px;
+  max-width: 33%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.menutext {
+  filter: invert(1);
+  flex-grow: 1;
+  line-height: 1.4;
+  font-size: 30px;
+}
+
+h2 {
+  color: #f1efe3;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.frontpage {
+  color: #f1efe3;
+  font-size: 25px;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.fpara {
+  color: #cccabc;
+  font-size: 20px;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.4;
+}
+
+ul {
+  font-size: 18px;
+  filter: invert(1);
+}
+
+.archivethumb img {
+  max-height: 150px;
+  padding: 5px;
+}
+
+.archivetable {
+  padding: 15px;
+  max-width: 50%;
+  border-collapse: collapse;
+  border: 2px solid #f1efe3;
+  background-color: #f1efe3;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.archivetitle {
+  padding: 20px;
+}
+
+.archivecovers {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.atcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.authorsnote {
+  font-family:
+    "American Typewriter", "ITC American Typewriter", Courier, Georgia, serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.authoricon img {
+  max-height: 200px;
+}
+
+.song {
+  display: flex;
+  justify-content: center;
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.songtable {
+  border-radius: 25px;
+  margin-top: 10px;
+  padding: 3px;
+  width: 300px;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  border: 5px color #bcc7c7;
+  background-color: #bcc7c7;
+  text-align: center;
+}
+
+.songtitle {
+  text-align: center;
+  padding: 3px;
+  font-size: 20px;
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.songicon img {
+  height: 70px;
+  width: auto;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.songname {
+  text-align: left;
+  font-style: italic;
+  padding-bottom: 10px;
+}
+
+.bg1 {
+  background-image: linear-gradient(to bottom, black, #e7e6d8);
+}
+
+#myBtn {
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: black; /* Set a background color */
+  color: gray; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+.missingfile img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  height: auto;
+  max-width: 500px;
+}
