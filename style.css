@@ -156,8 +156,18 @@ summary {
 }
 
 ul {
-  font-size: 18px;
   filter: invert(1);
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  ul {
+    font-size: 3.8vw;
+  }
 }
 
 .archivethumb img {
@@ -301,9 +311,15 @@ ul {
 
 .missingfile img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15px;
+  margin: 0 auto;
   height: auto;
-  max-width: 500px;
+  max-width: 20vw;
+}
+
+@media (min-width: 768px) {
+  .missingfile {
+    max-width: 50vw;
+    height: auto;
+    margin: 0 auto;
+  }
 }
