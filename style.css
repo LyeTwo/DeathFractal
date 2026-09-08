@@ -2,13 +2,24 @@ body {
   background-color: #1f2732;
 }
 
+img {
+  pointer-events: none;
+}
+
 .comicpage img {
-  display: block;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   margin-top: 15px;
-  width: 50%;
+  max-width: 50%;
   height: auto;
+}
+
+@media (max-width: 768px) {
+  .comicpage img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .layout {
@@ -29,11 +40,12 @@ body {
 
 .layoutan {
   display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 5px;
-  width: 400px;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  width: fit-content;
   margin: 0 auto;
   padding-top: 10px;
+  align-items: center;
 }
 
 .pagenav {
@@ -55,34 +67,72 @@ body {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .banner_content img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 .menu {
-  padding: 16px;
-  max-width: 33%;
+  width: fit-content;
   margin: 0 auto;
-  display: flex;
+  padding-top: 10px;
+  align-items: center;
 }
 
 .menutext {
   filter: invert(1);
-  flex-grow: 1;
   line-height: 1.4;
-  font-size: 30px;
+  font-size: 6vw;
+  text-align: center;
 }
 
-h2 {
+@media (min-width: 768px) {
+  .menutext {
+    font-size: 1.8rem;
+  }
+}
+
+.layout h2 {
   color: #f1efe3;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+@media (max-width: 768px) {
+  .layout h2 {
+    font-size: 5vw;
+  }
+}
+
+summary {
+  font-size: 5vw;
+}
+
+@media (min-width: 768px) {
+  summary {
+    font-size: 1.5rem;
+  }
+}
+
+.frontpage {
+  color: #f1efe3;
+  font-size: 3.2vw;
   font-family: "Lora", serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
 }
-.frontpage {
-  color: #f1efe3;
-  font-size: 25px;
-  font-family: "Lora", serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
+
+@media (min-width: 768px) {
+  .frontpage {
+    font-size: 1.5rem;
+  }
 }
 
 .fpara {
@@ -92,6 +142,16 @@ h2 {
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  line-height: 1.4;
+}
+
+.fparaital {
+  color: #cccabc;
+  font-size: 20px;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: italic;
   line-height: 1.4;
 }
 
@@ -106,6 +166,7 @@ ul {
 }
 
 .archivetable {
+  margin-top: 30px;
   padding: 15px;
   max-width: 50%;
   border-collapse: collapse;
@@ -116,13 +177,31 @@ ul {
   font-size: 25px;
 }
 
-.archivetitle {
-  padding: 20px;
+@media (max-width: 768px) {
+  .archivetable {
+    max-width: 100%;
+  }
 }
 
-.archivecovers {
+.archivetitle {
+  padding: 20px;
+  font-family: "Cabin", sans-serif;
+}
+
+.archivedate {
+  font-family: "Cabin", sans-serif;
+  font-size: 1.5rem;
+}
+
+.archivecovers summary {
   padding: 10px;
   font-size: 20px;
+  font-family: "Cabin", sans-serif;
+}
+
+.archivecovers p {
+  font-size: 20px;
+  font-family: "Cabin", sans-serif;
 }
 
 .atcontainer {
@@ -134,12 +213,22 @@ ul {
 .authorsnote {
   font-family:
     "American Typewriter", "ITC American Typewriter", Courier, Georgia, serif;
-  font-size: 18px;
+  font-size: 3.2vw;
   font-weight: bold;
 }
 
+@media (min-width: 768px) {
+  .authorsnote {
+    font-size: 1.8rem;
+  }
+}
+
 .authoricon img {
-  max-height: 200px;
+  width: 15vw;
+  max-width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .song {
